@@ -41,7 +41,7 @@ window.addEventListener('scroll', () => {
 
 // Menambahkan event listener untuk mengganti background dengan gambar baru
 // Anda dapat memanggil fungsi ini dengan URL gambar yang diinginkan
-changeBackground('https://via.placeholder.com/1920x1080');
+changeBackground('https://s.neoxr.eu/get/fZ4nbo.jpg');
 
 // Pemutar Musik: Fungsi untuk memutar musik
 const music = document.getElementById('music');
