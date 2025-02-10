@@ -7,14 +7,42 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="background">
+    <div class="background" id="background">
         <div class="content">
             <h1 class="message message-1">Halo, selamat datang di website portofolio Rafxz!</h1>
-            <h2 class="message message-2">Rafxz adalah seorang pemuda yang menekuni ilmu pemrograman seperti javascript, python, dan html.</h2>
+            <h2 class="message message-2">Rafxz adalah seorang pemuda yang menekuni ilmu pemrograman seperti JavaScript, Python, dan HTML.</h2>
             <button id="changeMessageBtn">Ganti Pesan</button>
         </div>
     </div>
 
-    <script src="script.js"></script>
+    <!-- Portfolio Section -->
+    <section id="portfolio">
+        <h2>Portofolio</h2>
+        <div class="portfolio-item" id="portfolio-item">
+            <img src="https://via.placeholder.com/300" alt="Portofolio 1">
+            <h3>Proyek 1</h3>
+            <p>Deskripsi proyek pertama yang menunjukkan hasil coding dan desain web.</p>
+        </div>
+    </section>
+
+    <!-- Skills Tab -->
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul id="skills-list">
+            <li>JavaScript</li>
+            <li>HTML/CSS</li>
+            <li>Python</li>
+            <li>React</li>
+        </ul>
+    </section>
+
+    <!-- Music Player -->
+    <audio id="music" controls>
+        <source src="path/to/your/music/file.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+
+    <script src="scripts.js"></script>
 </body>
 </html>
+

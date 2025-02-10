@@ -1,5 +1,5 @@
 /* Basic reset */
- {
+  {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -14,20 +14,12 @@ body, html {
 .background {
     position: relative;
     height: 100%;
-    background: linear-gradient(45deg, #ff6a00, #ee0979);
-    animation: backgroundAnimation 15s ease infinite;
+    background: url('https://via.placeholder.com/1920x1080') no-repeat center center/cover;
+    transition: background 0.5s ease-in-out;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-    transition: background 0.5s ease-in-out;
-}
-
-/* Background color animation */
-@keyframes backgroundAnimation {
-    0% { background: linear-gradient(45deg, #ff6a00, #ee0979); }
-    50% { background: linear-gradient(45deg, #56ccf2, #2f80ed); }
-    100% { background: linear-gradient(45deg, #ff6a00, #ee0979); }
 }
 
 /* Styling for the messages */
@@ -73,9 +65,64 @@ button:hover {
     background-color: #ee0979;
 }
 
+/* Portfolio Styling */
+#portfolio {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.portfolio-item {
+    margin: 20px;
+    display: inline-block;
+}
+
+.portfolio-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+#skills {
+    padding: 50px 20px;
+    background-color: #f0f0f0;
+    text-align: center;
+}
+
+#skills-list {
+    list-style: none;
+    padding: 0;
+}
+
+#skills-list li {
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+/* Music player styling */
+audio {
+    margin-top: 20px;
+}
+
+/* Scroll animation */
+.portfolio-item {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s ease, transform 1s ease;
+}
+
+.portfolio-item.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
 /* Responsive design */
 @media screen and (max-width: 768px) {
     .message {
         font-size: 1.5rem;
     }
+
+    #skills-list li {
+        font-size: 1rem;
+    }
 }
+
