@@ -1,0 +1,83 @@
+/* Basic reset */
+ {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Background setup */
+body, html {
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+.background {
+    position: relative;
+    height: 100%;
+    background: linear-gradient(45deg, #ff6a00, #ee0979);
+    animation: backgroundAnimation 15s ease infinite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+@keyframes backgroundAnimation {
+    0% { background: linear-gradient(45deg, #ff6a00, #ee0979); }
+    50% { background: linear-gradient(45deg, #56ccf2, #2f80ed); }
+    100% { background: linear-gradient(45deg, #ff6a00, #ee0979); }
+}
+
+/* Content area styling */
+.content h1 {
+    font-size: 3rem;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.content p {
+    font-size: 1.5rem;
+    color: white;
+    margin-bottom: 30px;
+}
+
+/* Animated button */
+.animated-button {
+    display: inline-block;
+    background-color: #ff6a00;
+    color: white;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    text-decoration: none;
+    border-radius: 30px;
+    transform: translateX(-100%);
+    animation: slideIn 1s forwards;
+    transition: background-color 0.3s ease;
+}
+
+.animated-button:hover {
+    background-color: #ee0979;
+}
+
+@keyframes slideIn {
+    to {
+        transform: translateX(0);
+    }
+}
+
+/* Responsive design */
+@media screen and (max-width: 768px) {
+    .content h1 {
+        font-size: 2rem;
+    }
+
+    .content p {
+        font-size: 1.2rem;
+    }
+
+    .animated-button {
+        font-size: 1rem;
+        padding: 12px 25px;
+    }
+}
+
